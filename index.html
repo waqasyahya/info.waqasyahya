@@ -2,16 +2,19 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Explore Waqas Yahya's portfolio, a skilled Project Development Manager and Full Stack Developer with expertise in Flutter, Laravel, and Livewire.">
-<meta name="keywords" content="Waqas Yahya, Portfolio, Project Development Manager, Flutter Development, Laravel Developer, Full Stack Developer, GetX, GetStorage, SEO, Web Development, Waqas Yahya Projects">
-<meta name="author" content="Waqas Yahya">
-<meta name="role" content="Project Development Manager, Full Stack Developer">
-<meta name="skills" content="Flutter, PHP, Laravel, Livewire, MySQL, SQLite, GitHub, Web Development, Project Management, Hami Groups">
-<meta name="skills" content="Skilled in Flutter development with GetX for state management and GetStorage for local storage, Laravel expert, Full Stack Development">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Explore Waqas Yahya's portfolio, a skilled Project Development Manager and Full Stack Developer with expertise in Flutter, Laravel, and Livewire.">
+    <meta name="keywords"
+        content="Waqas Yahya, Portfolio, Project Development Manager, Flutter Development, Laravel Developer, Full Stack Developer, GetX, GetStorage, SEO, Web Development, Waqas Yahya Projects">
+    <meta name="author" content="Waqas Yahya">
+    <meta name="role" content="Project Development Manager, Full Stack Developer">
+    <meta name="skills"
+        content="Flutter, PHP, Laravel, Livewire, MySQL, SQLite, GitHub, Web Development, Project Management, Hami Groups">
+    <meta name="skills"
+        content="Skilled in Flutter development with GetX for state management and GetStorage for local storage, Laravel expert, Full Stack Development">
 
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Waqas Yahya</title>
@@ -21,84 +24,93 @@
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
     <style>
+        .left-container {
+            left: -100%;
+            /* Start off-screen to the left */
+            animation: slideLeft 1s ease forwards;
+        }
 
-.left-container {
-    left: -100%; /* Start off-screen to the left */
-    animation: slideLeft 1s ease forwards;
-}
+        .right-container {
+            right: -100%;
+            /* Start off-screen to the right */
+            animation: slideRight 10s ease forwards;
+        }
 
-.right-container {
-    right: -100%; /* Start off-screen to the right */
-    animation: slideRight 10s ease forwards;
-}
+        .center-container {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+            /* Start off-screen */
+            animation: slideUp 1s ease forwards;
+        }
 
-.center-container {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 100%; /* Start off-screen */
-    animation: slideUp 1s ease forwards;
-}
+        @keyframes slideLeft {
+            to {
+                left: 0;
+                /* Slide in from left */
+                opacity: 1;
+            }
+        }
 
-@keyframes slideLeft {
-    to {
-        left: 0; /* Slide in from left */
-        opacity: 1;
-    }
-}
+        @keyframes slideRight {
+            to {
+                right: 0;
+                /* Slide in from right */
+                opacity: 1;
+            }
+        }
 
-@keyframes slideRight {
-    to {
-        right: 0; /* Slide in from right */
-        opacity: 1;
-    }
-}
+        @keyframes slideUp {
+            to {
+                top: 50%;
+                /* Slide up to center */
+                opacity: 1;
+            }
+        }
 
-@keyframes slideUp {
-    to {
-        top: 50%; /* Slide up to center */
-        opacity: 1;
-    }
-}
+        .fade-left {
+            animation: moveLeftRight 5s linear infinite, fadeLeft 3s ease;
+            opacity: 0;
+            /* Initially invisible */
+        }
 
-     .fade-left {
-    animation: moveLeftRight 5s linear infinite, fadeLeft 3s ease;
-    opacity: 0; /* Initially invisible */
-}
+        @keyframes moveLeftRight {
+            0% {
+                transform: translateX(-5%);
+            }
 
-@keyframes moveLeftRight {
-    0% {
-        transform: translateX(-5%);
-    }
-    50% {
-        transform: translateX(5%);
-    }
-    100% {
-        transform: translateX(-5%);
-    }
-}
+            50% {
+                transform: translateX(5%);
+            }
 
-@keyframes fadeLeft {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+            100% {
+                transform: translateX(-5%);
+            }
+        }
+
+        @keyframes fadeLeft {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
 
 
 
         .card {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
 
-.card-body {
-    padding: 20px;
-}
+        .card-body {
+            padding: 20px;
+        }
     </style>
 </head>
 
@@ -142,10 +154,10 @@
     </nav><!-- End of Page Navbar -->
 
     <!-- page header -->
-    
-    <header id="home" class="header" >
+
+    <header id="home" class="header">
         <div class="overlay"></div>
-        <div class="header-content container fade-left"    data-aos="fade-in" data-aos-delay="3000">
+        <div class="header-content container fade-left" data-aos="fade-in" data-aos-delay="3000">
             <h1 class="header-title">
                 <span class="up">HI!</span>
                 <span class="down">I am Waqas Yahya</span>
@@ -155,33 +167,40 @@
             <button class="btn btn-primary">Visit My Works</button>
         </div>
     </header><!-- end of page header -->
-
+<div class="" style="margin-top: 50px;"></div>
     <!-- about section -->
-    <section class="section pt-0" id="about">
+    <section class="section pt-0 card" style="background-color: whitesmoke;" id="about">
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
             <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/waqasimg.png" class="about-img"
+                <div class="about-img-holder ">
+                    <img src="assets/imgs/waqasprofile.png" class="about-img"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Skilled in backend development using Laravel with Livewire and Vue.js for creating dynamic and responsive web applications. Experienced in API creation and MySQL database management, with a strong proficiency in building MVC architecture-based projects and admin panels. Additionally, I have expertise in developing real-time chat applications and implementing thorough testing practices. Proficient in using Bootstrap and Tailwind CSS for crafting visually appealing and mobile-responsive user interfaces. Check out my work on GitHub for a deeper look into my projects.
+                    <p class="" style="font-size: 17px; justify-content:space-between;">
+                        Skilled in backend development using Laravel with Livewire and Vue.js for creating dynamic and
+                        responsive web applications. Experienced in API creation and MySQL database management, with a
+                        strong proficiency in building MVC architecture-based projects and admin panels. Additionally, I
+                        have expertise in developing real-time chat applications and implementing thorough testing
+                        practices. Proficient in using Bootstrap and Tailwind CSS for crafting visually appealing and
+                        mobile-responsive user interfaces. Check out my work on GitHub for a deeper look into my
+                        projects.
                     </p>
                     <div class="container mt-5">
-                        <a href="assets/imgs//Waqas Yahya(resume).pdf" download="waqas.pdf" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
+                        <a href="assets/imgs//Waqas Yahya(resume).pdf" download="waqas.pdf"
+                            class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
                     </div>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
-
+<div class="" style="margin-top: 50px;"></div>
     <!-- service section -->
-    <section class="section "   id="service">
+    <section class="section card " style="background-color: whitesmoke;" id="service">
         <div class="container text-center">
             <p class="section-subtitle">What I Do ?</p>
             <h6 class="section-title mb-6">Service</h6>
@@ -190,105 +209,113 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/aws.png"  style="width: 100px; height: 65px;"
+                            <img src="assets/imgs/aws.png" style="width: 100px; height: 65px;"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
-                                
+
                             <h6 class="title">Progressive Web Apps (PWA) Development</h6>
-                            <p class="subtitle">Develop Progressive Web Apps using Vue.js and Laravel that combine the best of web and mobile apps, providing offline access and native app-like experiences.</p>
+                            <p class="subtitle">Develop Progressive Web Apps using Vue.js and Laravel that combine the
+                                best of web and mobile apps, providing offline access and native app-like experiences.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/mobile.png"  style="width: 100px; height: 65px;"
+                            <img src="assets/imgs/mobile.png" style="width: 100px; height: 65px;"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
                             <h6 class="title">Mobile Application Development</h6>
-                            <p class="subtitle">Create cross-platform mobile applications using frameworks like Ionic or NativeScript, integrating Vue.js for the front-end and Laravel for the back-end.</p>
+                            <p class="subtitle">Create cross-platform mobile applications using frameworks like Ionic or
+                                NativeScript, integrating Vue.js for the front-end and Laravel for the back-end.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/real.png"  style="width: 100px; height: 65px;"
+                            <img src="assets/imgs/real.png" style="width: 100px; height: 65px;"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
                             <h6 class="title">Real-time Applications</h6>
-                            <p class="subtitle">Develop real-time applications such as chat apps, live streaming, or collaborative tools using Laravel with Vue.js and WebSocket technologies.</p>
+                            <p class="subtitle">Develop real-time applications such as chat apps, live streaming, or
+                                collaborative tools using Laravel with Vue.js and WebSocket technologies.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/responsive.svg"  style="width: 100px; height: 65px;"
+                            <img src="assets/imgs/responsive.svg" style="width: 100px; height: 65px;"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
                             <h6 class="title">Maintenance & Support</h6>
-                            <p class="subtitle">Offer ongoing maintenance and support for web and mobile applications built with Vue.js and Laravel, ensuring security, performance, and updates.</p>
+                            <p class="subtitle">Offer ongoing maintenance and support for web and mobile applications
+                                built with Vue.js and Laravel, ensuring security, performance, and updates.</p>
                         </div>
                     </div>
                 </div>
             </div><!-- end of row -->
 
-<div class="" style="height: 30px;"></div>
+            <div class="" style="height: 50px;"></div>
 
-                <!-- row -->
-                <div class="row fade-left" data-aos="fade-in">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/custom.png"   style="width: 100px; height: 65px;"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                    
-                                <h6 class="title">Custom Web Application Development</h6>
-                                <p class="subtitle">Build responsive, user-friendly web applications using Vue.js for front-end and Laravel for back-end. Ensure seamless integration of components, optimized performance, and scalability.</p>
-                            </div>
+            <!-- row -->
+            <div class="row fade-left" data-aos="fade-in">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/custom.png" style="width: 100px; height: 65px;"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+
+                            <h6 class="title">Custom Web Application Development</h6>
+                            <p class="subtitle">Build responsive, user-friendly web applications using Vue.js for
+                                front-end and Laravel for back-end. Ensure seamless integration of components, optimized
+                                performance, and scalability.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img src="assets/imgs/spa.png"  style="width: 100px; height: 65px;"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                <h6 class="title">Single Page Application (SPA) Development</h6>
-                                <p class="subtitle">Create dynamic single-page applications using Vue.js that offer a smooth user experience with fast loading times and real-time updates.</p>
-                            </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/spa.png" style="width: 100px; height: 65px;"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Single Page Application (SPA) Development</h6>
+                            <p class="subtitle">Create dynamic single-page applications using Vue.js that offer a smooth
+                                user experience with fast loading times and real-time updates.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img   style="width: 100px; height: 65px;" src="assets/imgs/api.png"
-                                    alt="api "
-                                    class="icon">
-                                <h6 class="title">API Development & Integration</h6>
-                                <p class="subtitle">Develop RESTful APIs with Laravel for robust and secure data management, and integrate them with Vue.js front-ends or mobile apps.</p>
-                            </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img style="width: 100px; height: 65px;" src="assets/imgs/api.png" alt="api " class="icon">
+                            <h6 class="title">API Development & Integration</h6>
+                            <p class="subtitle">Develop RESTful APIs with Laravel for robust and secure data management,
+                                and integrate them with Vue.js front-ends or mobile apps.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card">
-                            <div class="body">
-                                <img  style="width: 100px; height: 65px;" src="assets/imgs/ecomerce.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                    class="icon">
-                                <h6 class="title">E-commerce Solutions</h6>
-                                <p class="subtitle">Build custom e-commerce platforms with Laravel and Vue.js, featuring user-friendly interfaces, secure payment gateways, and inventory management.</p>
-                            </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img style="width: 100px; height: 65px;" src="assets/imgs/ecomerce.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">E-commerce Solutions</h6>
+                            <p class="subtitle">Build custom e-commerce platforms with Laravel and Vue.js, featuring
+                                user-friendly interfaces, secure payment gateways, and inventory management.</p>
                         </div>
                     </div>
-                </div><!-- end of row -->
+                </div>
+            </div><!-- end of row -->
         </div>
     </section><!-- end of service section -->
-
+<div class="" style="margin-top: 25px;"></div>
     <!-- portfolio section -->
-    <section class="section" id="portfolio">
+    <section class="section card" style="background-color: whitesmoke;" id="portfolio">
         <div class="container text-center">
             <p class="section-subtitle">What I Did ?</p>
             <h6 class="section-title mb-6">Portfolio</h6>
@@ -296,42 +323,49 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card left-container" data-aos="fade-in" data-aos-delay="3000">
-                        <img src="assets/imgs/app.png"  style="height: 300px;" class="portfolio-card-img"
+                        <img src="assets/imgs/app.png" style="height: 300px;" class="portfolio-card-img"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web App Developer</h5>
-                                    <p class="font-weight-normal">Developed user-friendly and high-performance Android applications using Flutter and Dart, ensuring seamless user experiences.</p>
+                                    <p class="font-weight-normal">Developed user-friendly and high-performance Android
+                                        applications using Flutter and Dart, ensuring seamless user experiences.</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/firbase.png" style="height: 300px;"  class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/firbase.png" style="height: 300px;"
+                            class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Api Integration</h5>
-                                    <p class="font-weight-normal">Integrated Firebase services for real-time databases, authentication, and cloud functions to enhance app functionality and user engagement.</p>
+                                    <p class="font-weight-normal">Integrated Firebase services for real-time databases,
+                                        authentication, and cloud functions to enhance app functionality and user
+                                        engagement.</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/wordpress.png" style="height: 300px;" class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/wordpress.png" style="height: 300px;"
+                            class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>WordPress Development</h5>
-                                    <p class="font-weight-normal">Customized and developed WordPress websites, including theme customization, plugin development, and content management for various clients.</p>
+                                    <p class="font-weight-normal">Customized and developed WordPress websites, including
+                                        theme customization, plugin development, and content management for various
+                                        clients.</p>
                             </span>
                         </span>
                     </a>
                 </div>
             </div><!-- end of row -->
-<br><br>
+            <br><br>
             <!-- second porfoplio -->
             <div class="row">
                 <div class="col-md-4">
@@ -341,45 +375,52 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Backend with Laravel</h5>
-                                    <p class="font-weight-normal">Built robust backend systems using PHP Laravel, implementing MVC architecture, and developing RESTful APIs to support frontend applications.</p>
+                                    <p class="font-weight-normal">Built robust backend systems using PHP Laravel,
+                                        implementing MVC architecture, and developing RESTful APIs to support frontend
+                                        applications.</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/api.jfif" style="height: 300px;" class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/api.jfif" style="height: 300px;"
+                            class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>RESTful API with Laravel</h5>
-                                    <p class="font-weight-normal">Designed and developed RESTful APIs with Laravel, enabling seamless data exchange between client and server, and integrating third-party services.</p>
+                                    <p class="font-weight-normal">Designed and developed RESTful APIs with Laravel,
+                                        enabling seamless data exchange between client and server, and integrating
+                                        third-party services.</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/admin.png" style="height: 300px;" class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/admin.png" style="height: 300px;"
+                            class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Admin Panel with Laravel</h5>
-                                    <p class="font-weight-normal">Created comprehensive admin panels using Laravel and Livewire, providing intuitive interfaces for managing application data and user roles.</p>
+                                    <p class="font-weight-normal">Created comprehensive admin panels using Laravel and
+                                        Livewire, providing intuitive interfaces for managing application data and user
+                                        roles.</p>
                             </span>
                         </span>
                     </a>
                 </div>
             </div>
-             <!-- seconf porfolio -->
+            <!-- seconf porfolio -->
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
 
     <!-- pricing section -->
- 
 
     <!-- section -->
-    <section class="section-sm bg-primary">
+    <section class="section-sm bg-primary card">
         <!-- container -->
         <div class="container text-center text-sm-left">
             <!-- row -->
@@ -411,7 +452,8 @@
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">He is a great developer who excels in both Flutter and backend work. He has experience working on live projects..</p>
+                            <p class="testimonial-card-subtitle">He is a great developer who excels in both Flutter and
+                                backend work. He has experience working on live projects..</p>
                             <h6 class="testimonial-card-title">Qamar Chishti</h6>
                         </div>
                     </div>
@@ -423,7 +465,9 @@
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">He is a great developer who excels in both Flutter and backend work. He has experience working on live projects, including outstanding contributions to an Islamic project.</p>
+                            <p class="testimonial-card-subtitle">He is a great developer who excels in both Flutter and
+                                backend work. He has experience working on live projects, including outstanding
+                                contributions to an Islamic project.</p>
                             <h6 class="testimonial-card-title">Zia ur rehman</h6>
                         </div>
                     </div>
@@ -441,26 +485,28 @@
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/github1.jfif" class="blog-card-img"
-                        alt="How to use GitHub">
+                    <img src="assets/imgs/github1.jfif" class="blog-card-img" alt="How to use GitHub">
                 </div>
                 <div class="blog-card-body">
                     <h5 class="blog-card-title">How to use GitHub</h5>
-            
+
                     <p class="blog-card-caption">
                         <a href="#">By: Waqas Yahya</a>
                         <a href="#"><i class="ti-heart text-danger"></i> 234</a>
                         <a href="#"><i class="ti-comment"></i> 123</a>
                     </p>
-                    <p>GitHub is a powerful platform for version control and collaboration. It allows you to host and review code, manage projects, and build software alongside millions of developers.</p>
-            
-                    <p><b>Using GitHub, you can track changes in your code, collaborate with others, and maintain the history of your projects.</b></p>
-                    <p>Repositories are the core of GitHub, where you store your project's files and folders. You can clone repositories to your local machine, make changes, and push updates back to the remote repository.</p>
-            
+                    <p>GitHub is a powerful platform for version control and collaboration. It allows you to host and
+                        review code, manage projects, and build software alongside millions of developers.</p>
+
+                    <p><b>Using GitHub, you can track changes in your code, collaborate with others, and maintain the
+                            history of your projects.</b></p>
+                    <p>Repositories are the core of GitHub, where you store your project's files and folders. You can
+                        clone repositories to your local machine, make changes, and push updates back to the remote
+                        repository.</p>
+
                     <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
-            
 
             <!-- blog-wrapper -->
             <div class="blog-card">
@@ -470,26 +516,29 @@
                 </div>
                 <div class="blog-card-body">
                     <h5 class="blog-card-title">How to Benefit from Android for Mobile Application Development</h5>
-            
+
                     <p class="blog-card-caption">
                         <a href="#">By: Waqas Yahya</a>
                         <a href="#"><i class="ti-heart text-danger"></i> 150</a>
                         <a href="#"><i class="ti-comment"></i> 75</a>
                     </p>
-                    <p>Android is a versatile platform for mobile application development, offering a wide range of features and tools. It allows developers to create innovative and user-friendly applications.</p>
-            
-                    <p><b>Using Android, you can leverage its open-source nature, extensive libraries, and robust development environment.</b></p>
-                    <p>Android provides a comprehensive set of APIs and development tools that simplify the process of building applications. It also supports a vast array of hardware and software configurations, making it suitable for diverse user needs.</p>
-            
+                    <p>Android is a versatile platform for mobile application development, offering a wide range of
+                        features and tools. It allows developers to create innovative and user-friendly applications.
+                    </p>
+
+                    <p><b>Using Android, you can leverage its open-source nature, extensive libraries, and robust
+                            development environment.</b></p>
+                    <p>Android provides a comprehensive set of APIs and development tools that simplify the process of
+                        building applications. It also supports a vast array of hardware and software configurations,
+                        making it suitable for diverse user needs.</p>
+
                     <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
-            
 
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 
-  
     <section class="section-sm bg-primary">
         <!-- container -->
         <div class="container text-center text-sm-left">
@@ -506,23 +555,23 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section>
-    
 
     <!-- footer -->
     <div class="container">
         <footer class="footer">
             <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="">Waqas yahya</a> Hami Groups <a
-                    href="">Lahore</a>
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> &copy; <a href="">Waqas yahya</a> Hami Groups <a href="">Lahore</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://www.facebook.com/profile.php?id=61561602788673" class="link"><i class="ti-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/waqas-yahya-019004285/" class="link" target="_blank"><i class="ti-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61561602788673" class="link"><i
+                        class="ti-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/waqas-yahya-019004285/" class="link" target="_blank"><i
+                        class="ti-linkedin"></i></a>
 
                 <a href="https://github.com/waqasyahya" class="link" target="_blank"><i class="ti-github"></i></a>
 
-               
             </div>
         </footer>
     </div> <!-- end of page footer -->
